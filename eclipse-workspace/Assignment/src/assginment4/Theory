@@ -1,0 +1,32 @@
+
+What is abstraction in Java? 
+	Abstraction in Java is the process of hiding internal implementation details and showing only the required functionality to the user.
+	It helps the programmer focus on what an object does rather than how it does it. 
+	In Java, abstraction is achieved using abstract classes and interfaces.
+	
+
+What is an abstract class? 
+		An abstract class in Java is a class that cannot be used to create objects and is meant to be extended by other classes. 
+		It may contain methods without implementation as well as implemented methods, so it provides a common base while leaving some work to the child classes. 
+		Abstract classes are mainly used when we want to define a structure but allow subclasses to give their own behavior.
+		
+What is an interface in Java?
+		An interface in Java is a contract that tells a class what methods it must implement, but it does not explain how those methods work.
+		 When a class implements an interface, it agrees to provide its own logic for all the methods defined in the interface.
+		 Interfaces are mainly used to achieve abstraction and to allow multiple inheritance in Java.
+		 
+
+Difference between abstract class and interface
+	Abstract class vs Interface
+
+	An abstract class is like a partially finished class. 
+	It can have both methods with code and methods without code. It is used when classes are closely related and can share some common behavior.
+	
+	An interface is like a rule book or contract. It only tells what methods a class must implement, not how. 
+	It is used when different classes need to follow the same rules, even if they are not related.
+	
+	
+What is a constructor?
+		A constructor is a special method in Java that is automatically called when an object is created. 
+		Its main job is to initialize the object, meaning it sets initial values for variables and prepares the object for use.
+		 A constructor has the same name as the class and does not have a return type.
