@@ -1,0 +1,36 @@
+1) How are Strings stored in memory?
+
+	 In Java, Strings are stored in heap memory. 
+	 String literals are stored in a special area called the String Constant Pool.
+	 If a string literal already exists in the pool, Java reuses the same object. 
+	 Strings created using the new keyword are stored in the heap outside the pool. 
+	 This approach saves memory.
+	  Strings are immutable, so sharing them is safe.
+
+2) What is an array in Java?
+
+	 An array in Java is a data structure used to store multiple values of the same data type.
+	 The elements are stored in contiguous memory locations. 
+	 Each element is accessed using an index value.
+	 The index starts from zero. Arrays help in efficient data storage and retrieval.
+
+3) How do you declare and initialize an array?
+
+	An array is declared by specifying the data type followed by square brackets. 
+	It can be initialized at the time of declaration or later. 
+	For example, int[] arr = {10, 20, 30};. 
+	Memory is allocated when the array is initialized. Each element is accessed using its index.
+
+4) What are jagged arrays?
+
+	 A jagged array is an array of arrays where each sub-array can have different lengths.
+	 It is different from a regular multidimensional array.
+	 Memory is allocated separately for each row.
+	 This helps in saving memory. Jagged arrays are used when data size varies.
+
+5) What is an ArrayIndexOutOfBoundsException?
+
+	 ArrayIndexOutOfBoundsException is a runtime exception in Java.
+	 It occurs when we try to access an array element using an invalid index.
+	 This happens if the index is negative or greater than the array size.
+	 It indicates a logical error in the program. This exception occurs at runtime.
