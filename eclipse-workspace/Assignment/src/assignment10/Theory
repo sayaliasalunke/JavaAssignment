@@ -1,0 +1,49 @@
+Difference between deep copy and shallow copy
+
+	A shallow copy creates a new object, but it copies the references of nested or child objects instead of creating new copies.
+	This means both the original and copied objects share the same memory reference for internal objects.
+	So, if we modify the referenced object, changes will reflect in both objects.
+	
+	A deep copy, on the other hand, creates a new object and also recursively copies all nested objects.
+	Each object has its own separate memory location.
+	So, any modification in the copied object does not affect the original object.
+	
+	shallow copy shares references, whereas deep copy creates completely independent objects.
+	
+
+What are varargs in Java?
+
+	Varargs (variable arguments) allow a method to accept a variable number of arguments of the same type.
+	It is declared using three dots (...) after the data type.
+	Internally, varargs are treated as an array.
+	It improves flexibility and reduces the need for multiple overloaded methods
+
+What is Autoboxing and Unboxing?
+
+	It was introduced in Java 5 to simplify working with collections.	
+	
+	Autoboxing converts primitive types into wrapper objects automatically, and unboxing converts wrapper objects back to primitives.
+	Autoboxing is the automatic conversion of a primitive data type into its corresponding wrapper class object.
+	Example: int → Integer.
+
+	Unboxing is the automatic conversion of a wrapper class object into its corresponding primitive type.
+	Example: Integer → int.
+	
+Difference between == and equals() for Strings.
+
+	== compares memory references (addresses) of objects.
+	equals() compares the actual content or values of objects.
+	
+	For Strings:
+	== checks if both references point to the same object.
+	equals() checks if the characters inside the strings are the same.
+	
+Explain String Concatenation and Interning
+	String Concatenation means joining two or more strings using the + operator or concat() method.
+	When we use +, Java internally uses StringBuilder for efficiency.
+	
+	String Interning means storing only one copy of each distinct string value in the String Constant Pool.
+	If two strings have the same value, they refer to the same memory location in the pool.
+	We can force interning using the intern() method.	
+	
+		
