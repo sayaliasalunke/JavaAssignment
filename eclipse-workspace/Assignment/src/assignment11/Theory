@@ -1,0 +1,43 @@
+1️ What is the Collection Framework?
+
+	The Collection Framework in Java is a set of classes and interfaces used to store and manipulate groups of objects.
+	It provides ready-made data structures like lists, sets, and maps.
+	It helps in performing operations such as searching, sorting, and inserting easily.
+	It reduces the need to write your own data structure code.
+	It is part of the java.util package.
+	Overall, it makes data handling efficient and standardized.
+
+2️ What are the interfaces of the Collection Framework?
+
+	The main interfaces of the Collection Framework are Collection, List, Set, Queue, and Map.
+	Collection is the root interface for most collection types.
+	List allows duplicate elements and maintains insertion order.
+	Set does not allow duplicate elements.
+	Queue is used for holding elements before processing.
+	Map stores data in key-value pairs and does not extend Collection.
+
+3️ What is the difference between Collection and Collections?
+
+	Collection is an interface in Java used to represent a group of objects.
+	It is the root interface of the Collection Framework.
+	Collections is a utility class in the java.util package.
+	It contains static methods like sort(), reverse(), and shuffle().
+	So, Collection is used to store data, while Collections is used to perform operations on that data.
+
+4️ Difference between List, Set, and Map
+
+	List allows duplicate elements and maintains insertion order.
+	Set does not allow duplicate elements and may or may not maintain order.
+	Map stores elements in key-value pairs instead of single objects.
+	In Map, keys must be unique but values can be duplicated.
+	List and Set extend the Collection interface, but Map does not.
+	These are used based on whether we need ordering, uniqueness, or key-value mapping.
+
+5️ What is ArrayList?
+
+	ArrayList is a class that implements the List interface.
+	It stores elements in a dynamic array.
+	It allows duplicate elements and maintains insertion order.
+	It provides fast random access using index numbers.
+	It automatically resizes when elements are added or removed.
+	ArrayList is best when frequent retrieval operations are required.
