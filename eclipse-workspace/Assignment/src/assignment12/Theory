@@ -1,0 +1,37 @@
+1) What is LinkedList?
+
+	LinkedList is a class in Java that implements the List interface and is part of the Java Collection Framework.
+	It stores elements in the form of nodes, where each node contains data and a reference to the next (and previous) node.
+	It allows duplicate elements and maintains insertion order.
+	Insertion and deletion are faster compared to ArrayList because no shifting is required.
+
+2) Difference between ArrayList and LinkedList
+
+	ArrayList vs LinkedList:
+	ArrayList uses a dynamic array, while LinkedList uses a doubly linked list.
+	ArrayList is faster for accessing elements (random access).
+	LinkedList is faster for insertion and deletion operations.
+	ArrayList consumes less memory compared to LinkedList.
+	LinkedList is better when frequent insertions/deletions are required.
+
+3) What is HashSet?
+
+	HashSet is a class in Java that implements the Set interface and is part of the Java Collection Framework.
+	It stores unique elements and does not allow duplicates.
+	It does not maintain insertion order.
+	It uses hashing internally for storing elements, so operations like add, remove, and search are fast.
+
+4) What is LinkedHashSet?
+
+	LinkedHashSet is a class that extends HashSet and implements the Set interface.
+	It stores unique elements and does not allow duplicates.
+	It maintains insertion order.
+	It uses a combination of hash table and linked list to store elements.
+
+5) What is TreeSet?
+
+	TreeSet is a class in Java that implements the Set interface and stores elements in sorted order.
+	It does not allow duplicate elements.
+	It uses a self-balancing tree (Red-Black Tree) internally.
+	Elements are sorted in natural order or by a Comparator.
+	It is slower than HashSet because it maintains sorting.
