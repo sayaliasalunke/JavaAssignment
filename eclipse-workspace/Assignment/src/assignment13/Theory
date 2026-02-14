@@ -1,0 +1,40 @@
+Difference between HashSet and TreeSet 
+
+	HashSet uses a hash table internally, while TreeSet uses a Red-Black Tree.
+	HashSet does not maintain order, TreeSet stores elements in sorted order.
+	HashSet allows one null value, TreeSet does not allow null (in most cases).
+	HashSet operations are generally faster (O(1)), TreeSet operations take O(log n).
+	TreeSet is used when sorted data is required.
+	HashSet is preferred when ordering is not important.
+
+2️ What is Map Interface? 
+
+	Map is an interface in the Java Collection Framework that stores data in key-value pairs.
+	Each key is unique, but values can be duplicated.
+	It is part of the java.util package.
+	Common implementations are HashMap, LinkedHashMap, and TreeMap.
+	Map does not extend Collection interface.
+
+3️ Difference between HashMap and Hashtable 
+
+	HashMap is not synchronized, but Hashtable is synchronized (thread-safe).
+	HashMap allows one null key and multiple null values, Hashtable allows no null key or value.
+	HashMap is faster because it is not synchronized.
+	Hashtable is a legacy class, while HashMap is modern (introduced in Java 1.2).
+	HashMap uses fail-fast iterator; Hashtable uses Enumerator (not fail-fast).
+
+4️ What is LinkedHashMap? 
+
+	LinkedHashMap is a subclass of HashMap.
+	It maintains insertion order of elements.
+	It uses a combination of Hash table and Doubly Linked List.
+	It allows one null key and multiple null values.
+	It is slightly slower than HashMap due to ordering maintenance.
+
+5️ What is TreeMap? 
+
+	TreeMap is a Map implementation that stores keys in sorted order.
+	It uses a Red-Black Tree internally.
+	It does not allow null keys, but allows multiple null values.
+	Operations like put, get, remove take O(log n) time.
+	It is used when sorted key-value mapping is required.
