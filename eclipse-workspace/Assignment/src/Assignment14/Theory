@@ -1,0 +1,72 @@
+1) How does HashMap work internally?
+
+	HashMap in Java is implemented using an array of buckets.
+	When we put a key-value pair, HashMap calls the hashCode() method of the key.
+	The hash code is converted into an index using a hashing formula.
+	The value is stored at that index (bucket).
+	If multiple keys map to the same index (collision), they are stored using:
+	Linked List (before Java 8)
+	Balanced Tree (Red-Black Tree) 
+	Average time complexity:
+	get() → O(1)
+	put() → O(1)
+	
+	2) What is load factor in HashMap?
+
+	Load factor defines how full the HashMap can get before resizing.
+	Default load factor = 0.75
+	Formula:
+	Capacity × Load Factor
+	When the number of entries exceeds this value, the HashMap:
+	Doubles its capacity
+	Rehashes all entries
+	Example:
+	If capacity = 16
+	Threshold = 16 × 0.75 = 12
+	After 12 elements, resizing happens.
+	Load factor balances:
+	Memory usage
+	Performance
+	
+
+3) What are Generics in Java?
+
+	Generics in Java allow you to define classes, interfaces, and methods with a type parameter, so the type of data is specified at compile time.
+	Generics in Java allow classes, interfaces, and methods to operate on different data types while providing compile-time type safety. 
+	They eliminate type casting and improve code reusability.
+	Generics is used for :
+	To ensure compile-time type checking
+	To avoid ClassCastException
+	To remove unnecessary type casting
+	To improve code reusability
+	
+	Example:
+	ArrayList<String> list = new ArrayList<>();
+	Here, only String objects are allowed.
+	Generics were introduced in Java 5.
+	They use angle brackets <T> to define type parameters.
+	
+4)Why are generics used?
+Generics in Java are used to provide compile-time type safety and improve code reusability.
+Before generics, collections stored data as Object, which required explicit type casting and could cause ClassCastException at runtime.
+Generics help to:
+Ensure type checking at compile time
+Eliminate explicit type casting
+Prevent runtime errors
+Write reusable and flexible code
+Example:
+ArrayList<String> list = new ArrayList<>();
+
+
+5)What is Type Safety? 
+Type safety means ensuring that a variable, method, or collection can hold only a specific type of data, and any type mismatch is detected at compile time instead of runtime.
+In Java, type safety is mainly achieved using generics.
+Why is Type Safety Important?
+
+Prevents ClassCastException
+Detects errors during compilation
+Makes code more reliable and secure
+Reduces runtime failures
+ArrayList list = new ArrayList();
+list.add("Hello");
+Integer num = (Integer) list.get(0); 
