@@ -1,0 +1,37 @@
+1. Difference between Shallow Copy and Deep Copy in Collections
+
+	Shallow Copy:
+	Shallow copy creates a new collection object, but the elements inside the collection are not copied.
+	Both the original and copied collections refer to the same objects in memory.
+	If the internal objects are modified, the change will be visible in both collections.
+	
+	Deep Copy:
+	Deep copy creates a new collection and also creates new copies of all the objects inside it.
+	The original collection and copied collection are completely independent.
+	Any modification in one collection does not affect the other.
+
+2. How do you sort a collection?
+
+	Collections in Java can be sorted using the Collections utility class.
+	The method Collections.sort() is commonly used to sort elements of a list in ascending order.
+	The elements must implement the Comparable interface. If we want custom sorting logic, we can use a Comparator interface.
+	From Java 8 onwards, sorting can also be done using lambda expressions for simpler code.
+
+3. How do you convert an array to a list?
+
+	An array can be converted into a list using the Arrays.asList() method.
+	This method takes the array as an argument and returns a list containing the elements of that array.
+	The returned list is fixed in size, which means elements cannot be added or removed.
+
+4. How do you convert a list to an array?
+
+	A list can be converted into an array using the toArray() method.
+	This method returns an array containing all the elements of the list.
+	The type of the array can be specified so that the returned array matches the required data type.
+
+5. What are Lambda Expressions?
+
+	Lambda expressions were introduced in Java 8 to provide a shorter way to write anonymous functions.
+	They are mainly used to implement functional interfaces, which contain only one abstract method.
+	Lambda expressions help reduce the amount of code and make programs easier to read and maintain.
+	They are widely used in collections, streams, and sorting operations.
