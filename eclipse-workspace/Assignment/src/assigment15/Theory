@@ -1,0 +1,44 @@
+1. Fail-Fast and Fail-Safe Iterators
+
+	Fail-Fast Iterator
+	A fail-fast iterator immediately throws an exception if the collection is modified while it is being iterated.
+	When an iterator is created, it expects the collection to remain unchanged during traversal. If another operation adds or removes elements directly from the collection, the iterator detects this change and throws ConcurrentModificationException.
+	This behavior helps detect programming errors early and prevents inconsistent data access.
+	Most collections like ArrayList and HashMap use fail-fast iterators.
+	
+	Fail-Safe Iterator
+	A fail-safe iterator does not throw an exception when the collection is modified during iteration.
+	Instead of working on the original collection, it creates a copy of the collection and iterates over that copy. Because of this, any changes made to the original collection do not affect the iteration process.
+	Classes such as CopyOnWriteArrayList and ConcurrentHashMap use fail-safe iterators.
+
+2. What is the Iterator interface?
+
+	The Iterator interface is used to access elements of a collection one by one. It provides a standard way to traverse through elements stored in collection classes without knowing their internal structure.
+	It contains methods to check whether more elements are available, retrieve the next element, and remove elements during iteration.
+	The iterator works in forward direction only and is commonly used with collection classes like ArrayList, HashSet, and LinkedList.
+
+3. What is the ListIterator interface?
+
+	The ListIterator interface is an advanced version of the iterator used specifically with list collections.
+	Unlike the normal iterator, it allows traversal of elements in both forward and backward directions. It also provides additional operations such as adding new elements, updating existing elements, and removing elements while iterating.
+	It is mainly used with classes that implement the List interface, such as ArrayList and LinkedList.
+
+4. What are Comparable and Comparator interfaces?
+
+	Both Comparable and Comparator interfaces are used in Java to sort objects.
+	Comparable
+	The Comparable interface is used to define the natural sorting order of objects.
+	In this case, the class whose objects need to be sorted implements the Comparable interface and defines the sorting logic inside the compareTo() method.
+	For example, objects of a student class can be sorted based on student ID or name using this interface.
+	Comparator
+	The Comparator interface is used to define custom sorting logic outside the class.
+	Instead of modifying the original class, a separate comparator class is created to define the sorting rule using the compare() method.
+	This approach is useful when we want to sort objects in multiple ways, such as sorting students by age, marks, or name.
+
+5. Difference Between Comparable and Comparator.
+
+	The Comparable interface is used to define the default or natural sorting order of objects, and the sorting logic is written inside the same class using the compareTo() method. Only one sorting rule can be defined using this interface.
+	The Comparator interface, on the other hand, allows custom sorting by creating a separate class that implements the compare() method. It allows multiple sorting logics without modifying the original class.
+	In simple terms, Comparable provides single default sorting, while Comparator allows multiple custom sorting methods.
+	
+	
