@@ -1,0 +1,36 @@
+1. Difference between while and do-while loops
+
+	The while loop checks the condition before executing the loop body. If the condition is false initially, the loop body will not execute even once.
+	The do-while loop checks the condition after executing the loop body. This means the loop body will execute at least once, even if the condition is false.
+	while is called an entry-controlled loop, while do-while is an exit-controlled loop.
+	Example: Menu-driven programs often use do-while to ensure at least one execution.
+
+2. Difference between return and System.exit()
+
+	The return statement is used to exit from a method and optionally return a value to the calling method. It only stops the execution of the current method.
+	System.exit() is used to terminate the entire Java program immediately. It stops the JVM and all running threads.
+	return is commonly used in functions to pass results.
+	System.exit() is used when the program must stop completely, such as in fatal errors.
+
+3. Checked vs Unchecked Exceptions
+
+	Checked exceptions are checked by the compiler at compile time. The programmer must handle them using try-catch or throws. Examples include file or database errors.
+	Unchecked exceptions occur at runtime and are not checked by the compiler. They usually occur due to programming mistakes like invalid operations.
+	Checked exceptions extend the Exception class (except RuntimeException).
+	Unchecked exceptions extend the RuntimeException class.
+
+4. Difference between throw and throws
+
+	The throw keyword is used to explicitly throw an exception inside a method. It is followed by an exception object.
+	Example: throw new Exception("Error");
+	The throws keyword is used in the method declaration to indicate that a method may throw certain exceptions.
+	It informs the caller that the exception must be handled.
+	Example: public void readFile() throws IOException.
+
+5. What is a Custom Exception?
+
+	A custom exception is a user-defined exception created by extending the Exception class or RuntimeException class.
+	It is used when built-in exceptions are not sufficient to describe a specific error condition in an application.
+	Custom exceptions help make error handling more meaningful and readable.
+	Example: creating an exception for InvalidAgeException in a registration system.
+	It allows developers to define application-specific error messages.
