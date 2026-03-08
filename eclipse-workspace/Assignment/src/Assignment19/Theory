@@ -1,0 +1,43 @@
+1. How to create your own package in Java?
+
+A package in Java is a namespace used to organize related classes and interfaces.
+We can create our own package using the package keyword at the top of a Java program.
+For example: package com.mycompany.util;. After compiling the program using javac -d . 
+ClassName.java, the package folder structure will be created automatically. 
+Packages help in avoiding class name conflicts and improve code reusability and maintainability.
+
+2. What is a Marker Interface?
+
+A marker interface is an empty interface that does not contain any methods. 
+It is used to mark a class so that the JVM or compiler can provide special behavior for that class. 
+When a class implements a marker interface, it indicates that the class has some special capability. 
+A common example is Serializable, which tells Java that an object can be converted into a byte stream. 
+Marker interfaces are mainly used for runtime checks.
+
+3. What is Serialization and Deserialization?
+
+Serialization is the process of converting a Java object into a byte stream so that it can be stored in a file or transferred over a network. 
+Deserialization is the reverse process, where the byte stream is converted back into the original Java object. 
+This mechanism is commonly used in file storage, caching, and network communication. 
+To perform serialization, a class must implement the Serializable interface.
+
+4. What is the transient keyword?
+
+The transient keyword in Java is used to indicate that a variable should not be serialized. 
+When an object is serialized, transient variables are ignored and not saved in the byte stream. 
+This is useful for storing sensitive data like passwords or temporary data that should not be persisted. 
+When the object is deserialized, transient variables are assigned default values such as 0 for numbers or null for objects.
+
+5. Difference between Interface and Abstract Class (Real-Time Example)
+
+An interface in Java is used to define a contract that classes must follow. 
+It contains method declarations that implementing classes must define. 
+A class can implement multiple interfaces, which supports multiple inheritance.
+
+An abstract class is a class that cannot be instantiated and may contain both abstract methods and concrete methods (methods with implementation).
+A class can extend only one abstract class because Java does not support multiple inheritance with classes.
+
+Real-time example:
+Consider a Vehicle system. 
+An interface like Vehicle can declare methods such as start() and stop(), and classes like Car, Bike, and Bus implement these methods in their own way.
+An abstract class like Car can provide common functionality such as fuelType() or speed() while leaving some methods abstract for subclasses to implement.
