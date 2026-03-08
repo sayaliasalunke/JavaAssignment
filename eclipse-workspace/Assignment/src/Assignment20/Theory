@@ -1,0 +1,43 @@
+1. Constructor Chaining
+
+	Constructor chaining is the process of calling one constructor from another constructor in the same class or from the parent class. 
+	It helps in reusing code and reducing duplication. 
+	In Java, constructor chaining can be done using this() to call another constructor in the same class and super() to call the parent class constructor. 
+	The call must be the first statement in the constructor. 
+	It is commonly used in inheritance to initialize parent and child class objects properly.
+
+
+2. Can a Constructor be Overridden?
+
+	No, constructors cannot be overridden in Java. 
+	Constructor overriding is not possible because constructors are not inherited by subclasses.
+	Overriding requires inheritance, but constructors belong only to the class where they are defined.
+	However, a subclass constructor can call the parent class constructor using super().
+	This ensures the parent class is properly initialized.
+
+3. What is the difference between static and instance variables?
+	Static Variable:
+	A static variable is declared using the static keyword and it belongs to the class rather than to any specific object. 
+	Only one copy of the static variable is created in memory and it is shared by all objects of that class. 
+	Static variables are created when the class is loaded into memory and are usually accessed using the class name. 
+	They are commonly used to store values that need to be common for all objects, such as counters or constant values.
+	Instance Variable:
+	An instance variable is declared without using the static keyword and it belongs to a particular object (instance) of a class. 
+	Every time a new object is created, a separate copy of the instance variable is also created. 
+	This means each object can have different values stored in its instance variables. Instance variables are accessed using object references and are used to store data that is unique for each object.
+
+4. What is method hiding?
+
+	Method hiding occurs when a static method in a subclass has the same name and parameters as a static method in the parent class. 
+	Instead of overriding, the subclass method hides the parent class method. 
+	Which method is executed depends on the reference type, not the object type. 
+	Method hiding works only with static methods. It is different from method overriding which works with instance methods.
+
+5. What are the limitations of Java?
+
+	Some common limitations of Java include:
+	Java does not support multiple inheritance using classes (only through interfaces).
+	It has slower performance compared to languages like C or C++ because of the JVM and bytecode execution.
+	Java has higher memory consumption due to automatic garbage collection.
+	It does not support operator overloading (except + for strings).
+	It provides less control over hardware compared to low-level languages.
