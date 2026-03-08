@@ -1,0 +1,41 @@
+1. What is a Functional Interface?
+
+	A Functional Interface in Java is an interface that contains only one abstract method.
+	It can also have multiple default and static methods, but only one method without a body.
+	Functional interfaces are mainly used with Lambda Expressions to write shorter and more readable code.
+	Java provides the @FunctionalInterface annotation to declare such interfaces. Examples include Runnable, Callable, and Comparator.
+	They are widely used in Java 8 features like Stream API.
+
+2. What is the for-each loop used for?
+
+	The for-each loop is used to iterate through elements of arrays or collections in Java.
+	It allows programmers to access each element directly without using an index variable.
+	This makes the code simpler, cleaner, and easier to understand. The loop automatically moves from one element to the next until all elements are processed.
+	It is commonly used with arrays, ArrayList, and other collection classes. It reduces the chance of index-related errors.
+
+3. What is the difference between break and continue?
+
+	The break statement is used to terminate the loop immediately and transfer control outside the loop.
+	It can also be used inside a switch statement.
+	The continue statement skips the current iteration of the loop and moves to the next iteration.
+	It does not terminate the loop completely.
+	Break stops the loop entirely, while continue only skips one cycle.
+	Both are used to control the flow of loops.
+
+4. Explain if-else and switch statements.
+
+	The if-else statement is used for decision making based on conditions. 
+	If the condition is true, the if block executes; otherwise, the else block executes. 
+	It is commonly used when checking ranges or multiple logical conditions. 
+	The switch statement is used to select one block of code from multiple options based on a variable value. 
+	It uses case labels and usually includes a break statement to stop further execution. 
+	Switch works with types like int, char, String, and enum.
+
+5. What is an enhanced for loop?
+
+	An enhanced for loop is another name for the for-each loop introduced in Java 5. 
+	It is used to traverse arrays and collections easily without using an index variable. 
+	The loop automatically retrieves each element one by one. 
+	It improves code readability and reduces complexity. 
+	However, it is mainly used for reading elements, not for modifying them. 
+	It is widely used when working with collections and arrays.
